@@ -1,0 +1,421 @@
+
+*{
+    margin:0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("Images/Untitled design.png");
+    background-size: cover;
+    background-position: center;
+}
+#header .container{
+    padding: 50px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* background-color: rgb(232, 229, 229); */
+}
+.logo{
+    width: 150px;
+    height: 50px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #38B6FF;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.headerinfo span{
+    color: #38B6FF;
+}
+.headerinfo{
+    margin-top: 80px;
+    font-size: 30px;
+    width: 40%;
+    text-align: center;
+    float: right;
+}
+.headerinfo h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.headerinfo button{
+    background-color: #38B6FF;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 80px; 
+    border: 0px;   
+}
+.headerinfo button:hover{
+    background-color: #38b6ffc2;
+}
+.headerinfo button a{
+    font-size: larger;
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
+.headerinfo button a:hover{
+    font-weight: bold;
+   
+}
+
+
+/*About me*/
+#AboutMe{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    padding-top: 50px;
+    text-align: justify;
+    word-spacing: 0ch;
+}
+.maindiv{
+    width:80%;
+    height: 600px;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-left: 10%;
+    justify-content: center;
+    padding: 50px;
+}
+/* .maindiv .bigtable{
+    border-style: none;
+    border: 1px solid black;
+    width: 80%;
+    height: 500px;
+    
+} */
+.R-div p{
+    font-size: 20px;
+}
+.L-div p{
+    font-size: 20px;
+}
+.maindiv .L-div{
+    width: 30%;
+    height: 500px;
+    float: left;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.L-div .title{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.L-div .title span{
+    font-size: 35px;
+    color: #38B6FF;
+}
+.R-div .title2{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.R-div .title2 span{
+    font-size: 35px;
+    color: #38B6FF;
+}
+.maindiv .R-div{
+    width:30%;
+    height: 500px;
+    float: right;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.maindiv .M-div{
+    width: 40%;
+    height: 500px;
+    justify-content: center;
+    /* border: 1px solid black; */
+
+}
+.M-div img{
+    clip-path: circle(50% at 50% 50%);
+    background-color: #a8d9f6;
+    width:350px;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.M-div button{
+    border: #38B6FF;
+    border-radius: 10px;
+    background-color: #38B6FF;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 37%;
+}
+.M-div button:hover{
+    background-color: #a8d9f6;
+}
+.M-div button a{
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+}
+
+/*Skills*/
+#Skills {
+    width: 100%;
+    height : 100vh;
+    padding: 20px;
+}
+
+#skills .container{
+    text-align: center;
+}
+#Skills h1{
+    padding: 30px;
+    font-size: xx-large;
+    font-weight: bold;
+    color:black;
+    align-items: center;
+}
+.divleft{
+    width: 40%;
+    height: 680px;
+    float: left;
+    padding: 40px;
+    align-items: center;
+}
+.divleft img{
+    height: 350px;
+    width: 500px;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 10px solid #38B6FF; 
+}
+.divright {
+    padding: 50px;
+    width: 60%;
+    height: 680px;
+    float: right;
+    align-items: center;
+}
+.divright h2{
+    color:#38b6ffc2;
+}
+.divright #D1,#D2,#D3,#D4,#D5{
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 20px; 
+    float: inline-end;
+    text-align: left;
+}
+#D1 img,#D2 img,#D3 img, #D4 img ,#D5 img{
+    float: left;
+    border-radius: 3px;
+    width: 60px;
+    height: 60px;
+    margin-left: 100px;
+    margin-right: 200px; ;
+
+}
+.divright .hr1{
+    width: 85%;
+    height: 4px;   
+}
+.divright .hr2{
+    width: 70%;
+    height: 4px;   
+}
+.divright .hr3{
+    width: 60%;
+    height: 4px;   
+}
+.divright .hr4{
+    width: 60%;
+    height: 4px;   
+}
+.divright .hr5{
+    width: 55%;
+    height: 4px;   
+}
+
+/*Contact*/
+#Contact{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+.contactme{
+    width: 70%;
+    height: 650px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 15%;
+    /* padding: 60px; */
+    /* border: 1px solid black; */
+}
+.contactme .icons{
+    width: 40%;
+    height: 550px;
+    float: left;
+    margin-top: 30px;
+    justify-content: left;
+    /* border: 1px solid black; */
+}
+.contactme .msgform{
+    width: 60%;
+    height: 550px;
+    float: right;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+    justify-content: center;
+}
+.icons #contacthead{
+    margin-bottom: 100px;
+    /* border: 1px solid black; */
+}
+.icons #contacthead span{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+.icons .mail,.icons .phone{
+  width: 100%;
+  height: 60px;
+  margin-top: 50px;
+  /* border:1px solid black ; */
+  justify-content: space-around;
+  
+}
+.icons .mail img, .phone img{
+    clip-path: circle(50% at 50% 50%);
+    background-color: #38b6ffc2;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    transition: ease 0.5s;
+}
+.icons .mail img:hover, .phone img:hover{
+    transition: ease-in-out 0.5s;
+}
+.mail a, .phone a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.icons .icon{
+    width: 100%;
+    height: 60px;
+    /* border:1px solid black ; */
+    justify-content: center;
+    margin-top: 100px;
+    display: inline-block;
+    align-items: center;
+    padding-left: 23%;
+}
+.icon img{
+    clip-path: circle(50% at 50% 50%);
+    margin: 10px;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+.icon img:hover{
+    transition: ease 0.8s;
+    background-color: #38B6FF; 
+}
+
+.msgform{
+    padding: 30px;
+}
+.msgform form input{
+    width: 100%;
+    border-radius: 3px;
+    font-size: 15px;
+    border: 0;
+    text-decoration:black;
+    /* background-color: #d4e4eed4; */
+}
+.msgform #nameip{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #8cd3ff50;
+}
+.msgform #mailip{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #8cd3ff50;
+}
+.msgform #msgip{
+    padding-bottom: 100px;
+    padding-top: 14px;
+    padding-left: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #8cd3ff50;
+}
+.msgform #submitbtn{
+    padding: 10px;
+    background-color: #38B6FF;
+    cursor:pointer;
+}
+.msgform #submitbtn:hover{
+    font-weight: bold;
+}
+.msgform button{
+    width: 20%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: #38B6FF;
+    border-radius: 3px;
+}
+#footerdiv{
+    width: 100%;
+    height: 70px;
+    background-color: #38B6FF;
+    text-align: center;
+}
+#footerdiv p{
+    font-size: 18px;
+    text-decoration: black;
+    padding-top: 25px;
+}
